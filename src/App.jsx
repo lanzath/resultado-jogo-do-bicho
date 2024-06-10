@@ -58,8 +58,6 @@ function App() {
       .finally(() => setLoading(false));
   }, []);
 
-  console.log(data);
-
   return (
     <Page>
       {loading ? (
