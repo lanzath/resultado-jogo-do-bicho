@@ -12,7 +12,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get('https://portalbrasil.net/jogodobicho/resultado-do-jogo-do-bicho/')
+      .get('https://portalbrasil.net/jogodobicho/resultado-do-jogo-do-bicho/', )
       .then((res) => {
         const $ = cheerio.load(res.data);
 
