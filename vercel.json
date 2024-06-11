@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "https://portalbrasil.net/jogodobicho/resultado-do-jogo-do-bicho/",
+      "source": "/(.*)",
       "destination": "https://portalbrasil.net/jogodobicho/resultado-do-jogo-do-bicho/",
       "headers": [
         { "key": "Access-Control-Allow-Credentials", "value": "true" },
