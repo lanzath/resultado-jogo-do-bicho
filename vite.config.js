@@ -10,25 +10,25 @@ const manifestForPlugIn = {
     short_name: 'Jogo do Bicho - Resultado',
     description: 'Visualizar resultado do jogo do bicho Deu no Poste',
     icons:[{
-      src: '/android-chrome-192x192.png',
+      src: './public/android-chrome-192x192.png',
       sizes:'192x192',
       type:'image/png',
       purpose:'favicon'
     },
     {
-      src:'/android-chrome-512x512.png',
+      src:'/./publicandroid-chrome-512x512.png',
       sizes:'512x512',
       type:'image/png',
       purpose:'favicon'
     },
     {
-      src: '/apple-touch-icon.png',
+      src: './public/apple-touch-icon.png',
       sizes:'180x180',
       type:'image/png',
       purpose:'apple touch icon',
     },
     {
-      src: '/maskable_icon.png',
+      src: './public/maskable_icon.png',
       sizes:'512x512',
       type:'image/png',
       purpose:'any maskable',
