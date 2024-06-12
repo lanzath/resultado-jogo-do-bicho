@@ -47,6 +47,6 @@ export default function handler(req, res) {
       res.status(200).json(results);
     })
     .catch(err => {
-      res.status(err.status).json({ msg: err.message });
+      res.status(err.status).json(err);
     });
 }
