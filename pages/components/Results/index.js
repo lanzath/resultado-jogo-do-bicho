@@ -19,7 +19,7 @@ const Results = () => {
       {loading ? (
         <Loading />
       ) : (
-        result && Object.entries(result).map((item) => {
+        result && Object.entries(result)?.map((item) => {
           const [time, results] = item;
           const title = `Resultado das ${time.slice(0, 2)}h`;
 
@@ -32,7 +32,7 @@ const Results = () => {
               <hr />
             </div>
           ) : (
-            <></>
+            <p>Nenhum resultado disponível</p>
           );
         })
       )}
