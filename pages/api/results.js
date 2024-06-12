@@ -4,8 +4,9 @@ import * as cheerio from 'cheerio';
 export default function handler(req, res) {
   axios
     .get('https://portalbrasil.net/jogodobicho/resultado-do-jogo-do-bicho/')
-    .then((response) => {
-      const $ = cheerio.load(response.data);
+    .then(response => response.data)
+    .then((data) => {
+      const $ = cheerio.load(data);
 
       const results = {};
 
