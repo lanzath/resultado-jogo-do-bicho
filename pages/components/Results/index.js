@@ -26,7 +26,7 @@ const Results = () => {
           return results.length > 0 ? (
             <div style={{ marginBottom: '1rem' }} key={time}>
               <h2 style={{ padding: '0.5rem' }}>{title}</h2>
-              {results.map((result, index) => (
+              {results?.map((result, index) => (
                 <p key={index} style={{ padding: '0.275rem' }} >{result}</p>
               ))}
               <hr />
