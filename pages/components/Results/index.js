@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Loading from '@/pages/components/Loading';
 
 const Results = () => {
-  const [result, setResult] = useState();
+  const [result, setResult] = useState({});
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const Results = () => {
       {loading ? (
         <Loading />
       ) : (
-        Object.entries(result).map((item) => {
+        result && Object.entries(result).map((item) => {
           const [time, results] = item;
           const title = `Resultado das ${time.slice(0, 2)}h`;
 
